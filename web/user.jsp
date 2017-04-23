@@ -20,7 +20,7 @@
 <div id="Reservations" class="tabcontent">
 
     <%if(session.getAttribute("currentuser")==null){%>
-    <h3 style="color:#2c71c9;">Please sign in to view your reservations.</h3>
+    <h3 style="color:#2c71c9;">Please sign in to view your reservations.!!!/h3>
     <%}else{ ArrayList<ArrayList<String>> tickets = ReservationsServlet.getTickets(session);%>
     <%if(session.getAttribute("reservationmessage")!=null){%>
     <p style="color:#903723"><%=session.getAttribute("reservationmessage")%></p>
