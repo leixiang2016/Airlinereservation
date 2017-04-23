@@ -25,15 +25,16 @@
     <h3 style="color:#2c71c9;float:left">Search for Tickets</h3>
     <br>
     <form style="float:left;text-align: left">
-    <label for="ticketnum">Ticket number: </label>
-    <input type="number" id="ticketnum" style="width:150px">
-    <label for="lastname">Last name: </label>
-    <input type="text" id="lastname" style="width:150px">
-    <label for="firstname">First name: </label>
-    <input type="text" id="firstname" style="width:150px">
+        <label for="ticketnum">Ticket number: </label>
+        <input type="number" id="ticketnum" style="width:150px">
+        <label for="lastname">Last name: </label>
+        <input type="text" id="lastname" style="width:150px">
+        <label for="firstname">First name: </label>
+        <input type="text" id="firstname" style="width:150px">
         <br>
         <br>
-    <input type="submit" class="prettybutton" name="searchtickets" value="Search">
+        <%ArrayList<ArrayList<String>> tickets = ReservationsServlet.getTickets(session);%>
+        <input type="submit" class="prettybutton" name="searchtickets" value="Search">
     </form>
     <br>
     <h3 style="color:#2c71c9;float:left">Passenger Tickets</h3>
@@ -45,15 +46,18 @@
             <th>ID #</th>
             <th>Manage</th>
         </tr>
+        <%for(ArrayList<String> ticket : tickets){%>
+        <%if(!ReservationsServlet.isPassed(ticket.get(3))){%>
         <tr>
-            <td>123456789</td>
-            <td>Smith</td>
-            <td>John</td>
-            <td>abc123jkl789</td>
+            <td><%=ticket.get(0)%></td>
+            <td><%=ticket.get(1)%></td>
+            <td><%=ticket.get(2)%><br><%=ticket.get(3)+" "%><%=ticket.get(4)%></td>
+            <td><%=ticket.get(5)%><br><%=ticket.get(6)+" "%><%=ticket.get(7)%></td>
             <td style="text-align:center"><input type="submit" class="prettybutton" value="Check in" name="ticketnumber">
                 <input type="submit" class="prettybutton" value="Cancel ticket" name="cancelticketnumber"></td>
         </tr>
     </table>
+    <%}}%>
 </div>
 </body>
 </html>

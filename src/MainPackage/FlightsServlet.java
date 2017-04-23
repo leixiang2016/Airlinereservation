@@ -9,7 +9,6 @@ import javax.servlet.http.HttpSession;
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -63,7 +62,8 @@ public class FlightsServlet extends HttpServlet {
         else if(request.getParameter("sortbutton")!=null){
             session.setAttribute("flightsort",request.getParameter("flightsort"));
             response.sendRedirect("/index.jsp");
-        }else{
+        }
+        else{
             session.setAttribute("numpassengers",request.getParameter("numpassengers"));
             ArrayList<ArrayList<Flight>> flights = getFlights(session);
             if(session.getAttribute("tripfield").equals("roundtrip")) {
