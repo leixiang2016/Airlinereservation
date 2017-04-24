@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/airlinereservation/out/artifacts/airlinereservation_war_exploded/WEB-INF/lib/itext5-itextpdf-5.5.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/airlinereservation/out/artifacts/airlinereservation_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.40-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/airlinereservation/out/artifacts/airlinereservation_war_exploded/WEB-INF/lib/itext5-itextpdf-5.5.11-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/airlinereservation/out/artifacts/airlinereservation_war_exploded/WEB-INF/lib/tomcat-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/airlinereservation/out/artifacts/airlinereservation_war_exploded/WEB-INF/lib/itext5-itextpdf-5.5.11-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/airlinereservation/out/artifacts/airlinereservation_war_exploded/WEB-INF/lib/javax.mail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
