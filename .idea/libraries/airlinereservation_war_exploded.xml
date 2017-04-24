@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="airlinereservation_war_exploded">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/airlinereservation/out/artifacts/airlinereservation_war_exploded/airlinereservation_war_exploded.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
